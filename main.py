@@ -4,8 +4,11 @@ from telegram import Bot
 from datetime import datetime
 
 # Replace with your bot token and chat ID
-BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
-CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID'
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
+
 
 # Simulate getting data from TradingView (replace with actual scraping or TV API workaround)
 def get_trading_signal():
